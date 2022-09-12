@@ -68,11 +68,11 @@ button {
   <script>
   const f = document.getElementById('form');
   const q = document.getElementById('query');
-  const google = 'https://www.bing.com/search?q=';
+  const searchengine = 'https://www.qwant.com/?client=brz-vivaldi&t=web&q=';
 
   function submitted(event) {
     event.preventDefault();
-    const url = google + q.value;
+    const url = searchengine + q.value;
     const win = window.open(url, '_self');
     win.focus();
   }
