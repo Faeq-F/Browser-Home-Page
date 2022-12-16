@@ -73,7 +73,7 @@ button {
   function submitted(event) {
     event.preventDefault();
     const url = searchengine + q.value;
-    const win = window.open(url, '_self');
+    const win = window.open(url, '_blank');
     win.focus();
   }
 
