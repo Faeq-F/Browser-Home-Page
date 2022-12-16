@@ -74,6 +74,7 @@ button {
     event.preventDefault();
     const url = searchengine + q.value;
     const win = window.open(url, '_blank');
+    q.value = '';
     win.focus();
   }
 
