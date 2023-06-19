@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Caveat);
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: Caveat;
+  margin: 0;
+}
+
+#searchField {
+  border: 1px solid black;
+  display: inline-block;
+  width: 100%;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #000;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #000000;
+}
+
+.searchTerm:focus {
+  color: #000000;
+}
+
+.searchButton {
+  width: 40px;
+  border: 1px solid #000;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: calc(50% + 5vh);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+}
+
+h1 {
+  font-size: 10vh;
+  flex: 0 0 auto;
+  margin-bottom: -2.5vh;
+}
+
+p {
+  font-size: 2.5vh;
+  margin: 0;
+  flex: 0 0 auto;
+  padding-left: 5px;
+  margin-top: auto;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 5vh;
+}
+
+#clockWrapper {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+}
