@@ -1,3 +1,18 @@
+var openPane = false;
+$("#settingsButton").click(function () {
+  if (openPane === false) {
+    $("#settingsMenu").show();
+    openPane = true;
+  } else {
+    $("#settingsMenu").hide();
+    openPane = false;
+  }
+
+});
+
+
+
+
 function setCookie(cname, cvalue, exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -21,7 +36,7 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
+
   // let user = getCookie("username");
   // if (user != "") {
   //   alert("Welcome again " + user);
@@ -31,4 +46,3 @@ function checkCookie() {
   //     setCookie("username", user, 30);
   //   }
   // }
-}
