@@ -18,7 +18,7 @@ function getTime() {
 
   setInterval(() => DisplayTime(
     new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: true }).slice(0, -3),
-    new Date().toLocaleTimeString().slice(now.toLocaleTimeString().length - 5, now.toLocaleTimeString().length)
+    new Date().getSeconds() + ((new Date().getHours() >= 12) ? " pm" : " am")
   ), 1000);
 }
 
