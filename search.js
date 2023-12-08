@@ -4,7 +4,7 @@ const searchField = document.getElementById("searchField");
 //const searchButton = document.getElementById("searchButton");
 
 function search() {
-  var win = window.open(searchEngine + searchField.value, '_blank');
+  var win = window.open(searchEngine + searchField.value, '_self');
   searchField.value = '';
   win.focus();
 }
