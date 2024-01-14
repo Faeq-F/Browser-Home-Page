@@ -7,26 +7,24 @@ $("#settingsButton").click(function () {
     $("#settingsMenu").hide();
     openPane = false;
   }
-
 });
 
+//Cookies
 
-
-
-function setCookie(cname, cvalue, exdays) {
+function setCookie(cookieName, cookieValue, expirationDays) {
   const d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  d.setTime(d.getTime() + expirationDays * 24 * 60 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
-  let name = cname + "=";
+function getCookie(cookieName) {
+  let name = cookieName + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
+  let ca = decodedCookie.split(";");
   for (let i = 0; i < ca.length; i++) {
     let c = ca[i];
-    while (c.charAt(0) == ' ') {
+    while (c.charAt(0) == " ") {
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
@@ -36,13 +34,20 @@ function getCookie(cname) {
   return "";
 }
 
-
-  // let user = getCookie("username");
-  // if (user != "") {
-  //   alert("Welcome again " + user);
-  // } else {
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    console.log("Welcome again " + user);
+  }
+  // else {
   //   user = prompt("Please enter your name:", "");
   //   if (user != "" && user != null) {
-  //     setCookie("username", user, 30);
+  //     setCookie("username", user, 400);
   //   }
   // }
+}
+
+function deleteCookie(cookieName) {
+  document.cookie =
+    cookieName + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}

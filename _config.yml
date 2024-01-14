@@ -1,1 +1,47 @@
-theme: jekyll-theme-tactile
+# Site
+title: "Home"
+email: faeqfaisal@hotmail.co.uk
+bio: "The Homepage"
+description: "The Homepage"
+logo: "Icon.png"
+locale: en_GB
+github_username: faeq-f
+github: [metadata]
+
+baseurl: /Browser-Home-Page
+url: http://faeq-f.github.io
+
+# Jekyll
+permalink: /:title/
+markdown: kramdown
+highlighter: white
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+mathjax: true
+sass:
+  sass_dir: _sass
+  style: compressed
+
+github-url: faeq-F/Browser-Home-Page
+stackoverflow: 13165763/faeq
+linkedin: faeq
+
+exclude:
+  [
+    README.md,
+    Gemfile,
+    Gemfile.lock,
+    node_modules,
+    gulpfile.js,
+    package.json,
+    _site,
+    src,
+    vendor,
+    CNAME,
+    LICENSE,
+    Rakefile,
+  ]

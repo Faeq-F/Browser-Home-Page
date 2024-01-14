@@ -109,7 +109,10 @@ h2 {
   padding-top: 10px;
   font-size: 16px;
   z-index: 50;
-  display: none
+  display: none;
+  border-radius: 15px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 #settingsButton {
@@ -118,6 +121,7 @@ h2 {
   top: 0;
   right: 10px;
   padding: 10px;
+  background: transparent;
 }
 
 #settingsButton i {
