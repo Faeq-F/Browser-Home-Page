@@ -1,6 +1,6 @@
-const searchEngine = "https://searx.thegpm.org/?q=";
+const searchEngine = "https://www.startpage.com/sp/search?query=";
 
-const searchEngineQueryEnd = "&categories=general&language=en-US";
+const searchEngineQueryEnd = "&t=light&lui=english&sc=pGH6209JMD1H20&cat=web";
 
 const searchField = document.getElementById("searchField");
 //const searchButton = document.getElementById("searchButton");
