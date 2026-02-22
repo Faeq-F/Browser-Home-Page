@@ -1,0 +1,24 @@
+<!-- Search Engine Component -->
+<div class="settings-section">
+  <h4>Search Engine</h4>
+  <div class="search-setting">
+    <div class="combobox-container" data-id="searchEngine">
+      <input type="text" class="combobox-search" placeholder="Search engines..."
+        autocomplete="off">
+      <div class="combobox-dropdown"></div>
+      <input type="hidden" id="searchEngine"
+        value="https://www.startpage.com/do/search?query=">
+      <div class="selected-value">Startpage</div>
+    </div>
+  </div>
+  <div class="custom-search-setting" id="customSearchSetting"
+    style="display: none; margin-top: 10px;">
+    <div class="combobox-container">
+      <input type="text" id="customSearchUrl" class="combobox-input"
+        placeholder="https://example.com/search?q=">
+    </div>
+    <small class="hint"
+      style="display: block; margin-top: 5px; font-size: 0.75rem; opacity: 0.6;">Use
+      {query} as placeholder for search terms</small>
+  </div>
+</div>
