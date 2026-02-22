@@ -1,3 +1,3 @@
-A simple home page for your browser
+# Browser Home Page
 
-(Settings & customizability coming soon)
+A simple & minimal home page for your browser
